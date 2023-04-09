@@ -56,8 +56,6 @@ public class TugasController {
 		Tugas existingTugas = tugasService.getTugasById(id);
 		existingTugas.setId(id);
 		existingTugas.setTugas(tugas.getTugas());
-		existingTugas.setNama(tugas.getNama());
-		existingTugas.setNim(tugas.getNim());
 		existingTugas.setStatus(tugas.getStatus());
 		
 		// save updated student object

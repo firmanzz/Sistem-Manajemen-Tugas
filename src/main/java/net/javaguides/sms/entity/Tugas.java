@@ -18,12 +18,6 @@ public class Tugas {
 	@Column(name = "tugas", nullable = false)
 	private String tugas;
 	
-	@Column(name = "nim")
-	private String nim;
-
-	@Column(name = "nama")
-	private String nama;
-	
 	@Column(name = "status")
 	private TugasCategory status;
 	
@@ -31,11 +25,9 @@ public class Tugas {
 		
 	}
 	
-	public Tugas(String tugas, String nim, String nama, TugasCategory status) {
+	public Tugas(String tugas, TugasCategory status) {
 		super();
 		this.tugas = tugas;
-		this.nim = nim;
-		this.nama = nama;
 		this.status = status;
 	}
 	public String getId() {
@@ -43,18 +35,6 @@ public class Tugas {
 	}
 	public void setId(String id) {
 		this.id = id;
-	}
-	public String getNama() {
-		return nama;
-	}
-	public void setNama(String nama) {
-		this.nama = nama;
-	}
-	public String getNim() {
-		return nim;
-	}
-	public void setNim(String nim) {
-		this.nim = nim;
 	}
 	public String getTugas() {
 		return tugas;

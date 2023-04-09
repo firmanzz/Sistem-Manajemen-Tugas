@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import net.javaguides.sms.entity.Tugas;
 import net.javaguides.sms.entity.TugasCategory;
+import net.javaguides.sms.entity.User;
 import net.javaguides.sms.repository.TugasRepository;
+import net.javaguides.sms.repository.UserRepository;
 
 @SpringBootApplication
 public class StudentManagementSystemApplication implements CommandLineRunner{
@@ -18,13 +20,19 @@ public class StudentManagementSystemApplication implements CommandLineRunner{
 
 	@Autowired
 	private TugasRepository tugasRepository;
+	private UserRepository userRepository;
 	
 	@Override
 	public void run(String... args) throws Exception {
-		
-		
-		  Tugas student1 = new Tugas("Mater", "221524013", "Firman", TugasCategory.Selesai);
-		  tugasRepository.save(student1);
+
+		  User user1 = new User("firman", "firman123");
+		  userRepository.save(user1);
+		  
+		  User user2 = new User("roy", "roy123");
+		  userRepository.save(user2);
+
+		  User user3 = new User("alvyn", "alvyn123");
+		  userRepository.save(user3);
 		
 	}
 

@@ -1,0 +1,39 @@
+/* Warna latar belakang untuk halaman */
+body {
+    background-image: url(background-html-keren-7.webp);
+
+  }
+  
+  /* Ukuran font untuk judul */
+  h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  
+  /* Tombol "Tambah Tugas" */
+  .btn-primary{
+    background-color: #46df00;
+    border-color: #007bff;
+    font-size: large;
+    font-weight: 500;
+  }
+  .btn-primary2{
+    background-color: #ebeef1;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  /* Tombol "Hapus" */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
